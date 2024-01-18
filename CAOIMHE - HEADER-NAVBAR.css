@@ -9,7 +9,7 @@ body, html {
     padding: 0;
 }
 
-/*------------Scroll Bar------------*/
+/*------------Scroll Bar------------*//*------------I've added the Webkit code so that it renders correctly on both chrome/safari------------*/
 
 ::-webkit-scrollbar {
     width: 20px;
