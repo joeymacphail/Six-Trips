@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<body>
+<!--=======Nav Bar========-->
+<section class="nav-bar">
+  <div class="logo"><i><b>Six Trips</i></b></div>
+  <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+</section>
+
+<!--==========Banner=============-->
+<section class="banner">
+    <div class="banner-heading">
+      <h1>Where will you travel to?</h1>
+    </div>
+    </body>
+</html>
