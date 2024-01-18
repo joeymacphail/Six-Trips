@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contactform.css">
+
+</head>
+
+
+<body>
+ 
+        <div class="container">
+            <form onsubmit="sendEmail(); reset(); return false;"> <!-- return false prevents the submission of the form if a particular entry is unfilled. onsubmit - when form has been submitted email is sent and form is reset -->
+                <h3>Contact Us/Colaborate With Us/Blog With Us</h3>
+                <input type="text" id="name" placeholder="Your Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <textarea id="message" rows="5" placeholder="Message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+    
+    
+<script src="https://smtpjs.com/v3/smtp.js"></script> <!-- https://smtpjs.com/ for sending and receiving email messages from JS -->
+<script> <!-- code inside the script has been taken from https://smtpjs.com/ and adjusted for our email set up.  -->
+    function sendEmail(){
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "cfggroup3@gmail.com",
+    Password : "projectcfggroup3",
+    To : 'cfggroup3@gmail.com',
+    From : document.getElementById("email").value,   <!-- https://www.w3schools.com/jsref/met_document_getelementbyid.asp document.getElementById() is used to read or edit an HTML element -->
+    Subject : "New Enquiry",
+    Body : "Name: " + document.getElementById("name").value 
+    + "<br> Email: " + document.getElementById("email").value       <!-- Whatever is writen inside Body: is whatever appears on the email sent when form is submitted -->
+    + "<br> Message: " + document.getElementById("message").value
+}).then(
+  message => alert("Message sent succesfully") <!-- message inside the pop up after form has been submited successfully -->
+);
+    }
+</script>
+
+</body>
+
+</html>
