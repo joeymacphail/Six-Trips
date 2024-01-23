@@ -1,0 +1,251 @@
+/** {
+  box-sizing: border-box;
+}*/
+
+/*for repsonsive web building*/
+/*==Caoimhe CSS HEADER/NAVBAR Start==*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Joey's body code
+body {
+  background-color: #f3f3f3;
+  
+  border: 15px #29adb2;
+  padding: 20px;
+  margin: auto;
+}*/
+
+
+/*------------Scroll Bar------------*//*------------I've added the Webkit code so that it renders correctly on both chrome/safari------------*/
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0766AD;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0766AD;
+}
+
+/*============Nav Bar===============*/
+.nav-bar {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 90px;
+  background-color: #f3f3f3;
+  box-shadow: 3px 3px 10px #0766AD;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  flex: 1;
+  font-size: 40px;
+  color: #0766AD;
+  padding: 20px;
+  margin-left: 50px;
+  font-family: cursive;
+}
+
+ul.menu {
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.menu li {
+  flex: 1;
+  list-style-type: none;
+  font-size: 16px;
+  font-family: monospace;
+  text-align: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #0766AD;
+  text-transform: uppercase;
+}
+
+.menu li a:hover {
+  color: #0766AD;
+  text-decoration: underline;
+}
+
+/*============Banner============*/
+
+.banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-heading {
+  flex: 1;
+}
+
+.banner-heading h1 {
+  font-size: 100px;
+  font-weight: normal;
+  color: #C5E898;
+  font-family: monospace;
+}
+/*==Caoimhe HEADER/NAVBAR CSS End==*/
+
+
+/*==JOEY CSS ABOUT PAGE Start==*/
+
+.header {
+  border-style: solid;
+  background-color: #29adb2;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ========================COLUMN LAYOUT FOR EACH MEMBER PICTURE=========================== */
+/* 
+UNSURE OF THE PUPOSE OF THIS CODE 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+*/
+.grid {
+  max-width: auto;
+  margin: auto;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin: auto;
+}
+
+.tile::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding: 20px
+}
+
+/* ====================== FLIP CARD SECTION =========================*/
+
+.flip-card {
+  padding: 0 20px;
+  margin: auto;
+  /*added for flipping below*/
+  background-color: transparent;
+  width: 300px;
+  height: 500px;
+  border: 1px solid #f3f3f3;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.tile,
+.desc {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+.tile {
+  margin: 5px;
+  width: 100%;
+  /* Style the front side (fallback if image is missing) */
+  background-color: #bbb;
+  color: black;
+
+}
+
+/* Style the back side */
+.desc {
+  background-color: #0766AD;
+  color: #f3f3f3;
+  transform: rotateY(180deg);
+  padding: 20px;
+  text-align: center;
+}
+
+p.blurb {
+  border: 2px solid black;
+  outline: #f3f3f3 solid 10px;
+  background-color: #29adb2;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.clearfix:after {
+  /*border-style: solid;
+    background-color: #29adb2 ;
+    padding: 20px;
+    text-align: center;*/
+  content: "";
+  display: table;
+  clear: both;
+}
+/*========== FOOTER STYLING ================*/
+footer {
+  border-style: solid;
+  background-color: #29adb2;
+  padding: 20px;
+  text-align: center;
+}
+/*========== ABOUT PAGE RESPONSIVENESS ================*/
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px
+  }}
+
+  /*==JOEY CSS ABOUT PAGE END==*/

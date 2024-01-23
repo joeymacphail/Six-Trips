@@ -4,12 +4,14 @@
     margin: 0;
 }
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
 }
 
-/*------------Scroll Bar------------*//*------------I've added the Webkit code so that it renders correctly on both chrome/safari------------*/
+/*------------Scroll Bar------------*/
+/*------------I've added the Webkit code so that it renders correctly on both chrome/safari------------*/
 
 ::-webkit-scrollbar {
     width: 20px;

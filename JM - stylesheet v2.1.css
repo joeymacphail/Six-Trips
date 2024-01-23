@@ -17,7 +17,7 @@ div.tile{
     margin: 5px;
     border: 1px solid #0766AD;
     float: left;
-    width: 180px;}
+    width: 100%;}
 div.tile:hover {border: 1px solid #0766AD}
 div.tile img{
         width: 100%;
