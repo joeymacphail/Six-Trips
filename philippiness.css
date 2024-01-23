@@ -1,0 +1,85 @@
+
+.container {
+    font-family: "Recursive", sans-serif;
+    padding: 25px;
+}
+
+.container h1{
+    color: #0766AD;
+}
+
+.container h2 {
+    color: #29adb2;
+}
+
+.container h3{
+    font-family: "Recursive", sans-serif;
+    color: black;
+
+}
+.container h5{
+    font-family: "Recursive", sans-serif;
+    color: #c5e898;
+}
+
+.container p{
+    font-family:"Grape Nuts", cursive;
+    font-size: 2rem;
+    color: black;
+}
+
+.navBar {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100px;
+    background-color: #c5e898;
+    box-shadow: 3px 3px 10px #29adb2;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navBar > img {
+    padding-left: 50px;
+    width: 150px;
+    width: 150px;
+}
+
+.navBar h2 {
+    flex: 1;
+    font-size: 50px;
+    color: #0766AD;
+    padding: 20px;
+    margin-left: 50px;
+    font-family:"Grape Nuts", cursive;
+}
+
+
+.navBar ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 100px;
+    padding-right: 50px;
+
+}
+
+.navBar li {
+    flex: 1;
+    list-style-type: none;
+    font-size: 20px;
+    text-align: right;
+}
+
+.navBar li a {
+    text-decoration: none;
+    color: #0766AD;
+}
+
+.navBar li a:hover {
+    color: #0766AD;
+    font-family:"Grape Nuts", cursive;
+}
