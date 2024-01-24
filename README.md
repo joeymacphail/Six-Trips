@@ -1,21 +1,14 @@
 Filing
 
-Files are split by type: HTML, CSS, IMAGES
+Files are split by page
 
 **REMEMBER MOVING ANY FILES WILL REQUIRE UPDATES OF HTML CODE**
 
-HTML FOLDER
+for each page
 - Main code for each page
---> Countries (folder)
-host code for each country
---> WIP HTML (folder)
-to host any WIP code
+- CSS for the page
+--> images for the page
 
-CSS FOLDER
---> master stylesheet
---> WIP stylesheets (folder)
-
-IMG FOLDER
---> About Page
---> Countries
-  --> Folder for each country
+Home page
+About page
+Country
